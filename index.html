@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,38 @@
 
   <title>Crystal Game</title>
 
- <link rel="stylesheet" href="./assets/css/style.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
- <!-- Added link to the jQuery Library -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
 
 </head>
-  <body>
 
-    <div class="jumbotron jumbotron-fluid background">
-      <div class="container">
-        <h1 class="display-3">Crystal Game</h1>
-        <div class="row align-items-center">
-          <p>You will be given a random number at the start of the game.</p>
-          <p>Each crystal represent a specific amount. By clicking on a crystal, it adds points to your score.</p>
-          <p>To win, match your score to random number. You lose the game when your score is above random number.</p>
-          <p>The value of each crystal is hidden from you until you click on it.</p>
-          <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>
+<body>
+
+  <div class="jumbotron jumbotron-fluid background">
+    <div class="container">
+      <h1 class="display-3">Crystal Game</h1>
+      <div class="row align-items-center">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>Each crystal represent a specific amount. By clicking on a crystal, it adds points to your score.</p>
+        <p>To win, match your score to random number. You lose the game when your score is above random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
       </div>
     </div>
+  </div>
 
-    <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
         <h2>Random#:
-          
+
           <span id="random"></span>
         </h2>
       </div>
       <div class="col-12 col-md-6">
         <h2>Your Score:
-          
+
           <span id="yourScore"></span>
         </h2>
       </div>
@@ -65,23 +66,30 @@
   <div class="row">
     <div class="col-12 col-md-4 text-center py-5">
       <h3>
-         Status: <span id="status"></span>
+        Status:
+        <span id="status"></span>
       </h3>
     </div>
     <div class="col-12 col-md-4 text-center py-5">
       <h3>
-        Wins: <span id="wins">0</span>
+        Wins:
+        <span id="wins">0</span>
       </h3>
     </div>
     <div class="col-12 col-md-4 text-center py-5">
       <h3>
-        Losses: <span id="losses">0</span>
+        Losses:
+        <span id="losses">0</span>
       </h3>
     </div>
   </div>
 
 
-</div>
-    <script src="assets/javascript/game.js"></script> 
+
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
 </body>
+
 </html>
