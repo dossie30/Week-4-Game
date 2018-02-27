@@ -24,32 +24,64 @@
           <p>To win, match your score to random number. You lose the game when your score is above random number.</p>
           <p>The value of each crystal is hidden from you until you click on it.</p>
           <p>Each time when the game starts, the game will change the values of each crystal.</p>
-      </div>
+        </div>
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Created HTML div.  -->
     <div class="container">
-
-
-
-
-
-
-
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Random#:
+          
+          <span id="random"></span>
+        </h2>
+      </div>
+      <div class="col-12 col-md-6">
+        <h2>Your Score:
+          
+          <span id="yourScore"></span>
+        </h2>
+      </div>
     </div>
-    <script src="./assets/javascript/game.js"></script> 
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <img class="img-fluid" src="assets/images/clear.jpg" alt="clearImage">
+      </div>
+      <div class="col-12 col-md-3">
+        <img class="img-fluid" src="assets/images/pink.png" alt="pinkImage">
+      </div>
+      <div class="col-12 col-md-3">
+        <img class="img-fluid" src="assets/images/blue.jpg" alt="blueImage">
+      </div>
+      <div class="col-12 col-md-3">
+        <img class="img-fluid" src="assets/images/multi.jpg" alt="multiImage">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-4 text-center py-5">
+      <h3>
+         Status: <span id="status"></span>
+      </h3>
+    </div>
+    <div class="col-12 col-md-4 text-center py-5">
+      <h3>
+        Wins: <span id="wins">0</span>
+      </h3>
+    </div>
+    <div class="col-12 col-md-4 text-center py-5">
+      <h3>
+        Losses: <span id="losses">0</span>
+      </h3>
+    </div>
+  </div>
+
+
+</div>
+    <script src="assets/javascript/game.js"></script> 
 </body>
 </html>
