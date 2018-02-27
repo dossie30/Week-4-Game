@@ -12,6 +12,8 @@ $(document).ready(function () {
   var randomNumber = "";
   var counter = 0;
   var yourScore = 0;
+  var wins = 0;
+  var losses = 0;
 
   // Generate a new random number between 19 and 120.
   var randomN = Math.floor(Math.random() * 121) + 18;
@@ -35,12 +37,17 @@ $(document).ready(function () {
 
     if (counter === randomN) {
       $("#status").append("You win!");
+      wins++;
+      $("#wins").text(wins);
     }
 
     else if (counter > randomN) {
       $("#status").append("You lose!");
+      losses++;
+      $("#losses").text(losses);
     }else{
       $("#yourScore").text(counter);
+      
     }
 
   });
